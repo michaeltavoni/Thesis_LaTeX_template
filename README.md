@@ -36,5 +36,5 @@ Elaborato_finale:
 ## 3. Download
 Di seguito è stato inserito il link con il quale si potrà scaricare una cartella compressa, costruita come suggerito in precedenza.
 
-[download - zip](https://github.com/michaeltavoni/MasterThesis_LaTeX_template/releases/download/stable/template_latex_tesi.zip)
+[download - zip](https://github.com/michaeltavoni/Thesis_LaTeX_template/archive/refs/heads/main.zip)
 
