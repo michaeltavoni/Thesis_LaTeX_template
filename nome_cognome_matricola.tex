@@ -1,0 +1,55 @@
+\documentclass[twoside, openany]{TESI}
+
+% PREAMBOLO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{xcolor} %pacchetto per gestire i colori (evidenziatura, testo colorato)
+\usepackage{graphicx} %pacchetto per gestire le immagini (per import media)
+\usepackage{float} %ulteriore pacchetto per gestire le immagini
+\usepackage{mathtools} %pacchetto per gestire equzioni matematiche
+\usepackage{tikz} %pacchetto per gestire disegni tecnici
+\usepackage{caption} %pacchetto per gestire le didascalie in foto/tabelle
+\usepackage{subcaption} %pacchetto per gestire le sottodidascalie in foto/tabelle multiple
+\usepackage{tcolorbox} %pacchetto per definire e gestire box di testo colorati
+%\usepackage{listings} %pacchetto per gestire la formattazione del codice (r,python)
+%\usepackage{minted} %alternativa a listings (ATTENZIONE: inserire --shell-escape in latex:tools)
+% \usepackage{showframe} %pacchetto per stampare i margini del documento
+\graphicspath{{immagini}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% IMPOSTAZIONE DELLA COPERTINA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\Indirizzo{Nome del corso di laurea}
+\Laureando{Nome studente}
+\Relatore{Nome relatore}
+\Correlatore{Nome correlatore} %se non presente cancellare l'intero comando (non verrà inserito nulla nel documento finale)
+\Titolo{Titolo della tesi}
+\ParoleChiave{Chiavi separate da ;}
+\AnnoAccademico{2023/2024}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+%\dedica{dedica come nei libri}
+\frontmatter
+\chapter{Abstract}
+%inserire testo
+\chapter{Ringraziamenti}
+%inserire testo
+\tableofcontents
+\mainmatter 
+\chapter{Introduzione}
+%inserire testo
+\chapter{Primo capitolo della Tesi}
+\section{Prima sezione del primo capitolo della Tesi}
+%inserire testo
+\chapter{Secondo capitolo della Tesi}
+\section{Prima sezione del secondo capitolo della Tesi}
+%inserire testo
+\subsection{Prima sottosezione del secondo capitolo della Tesi}
+%inserire testo
+\appendix
+\chapter{Prima appendice}
+%inserire testo
+\backmatter 
+\chapter{Bibliografia}
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
