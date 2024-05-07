@@ -2,9 +2,15 @@
 
 Il template tesi è stato creato da me, come studente, non è un template ufficiale. Ad ogni modo al netto delle modifiche del caso. si tratta di un template specifico per il Dipartimento di Economia "Marco Biagi" dell'università di Modena e Reggio-Emilia.
 
-## 1. Istruzioni
+## 1. Download
 
-### 1.1 Opzioni
+Di seguito è stato inserito il link con il quale si potrà scaricare una cartella compressa, costruita come suggerito in precedenza.
+
+[![Download](https://img.shields.io/badge/Download-Click%20Here-blue.svg)]([url_del_download](https://github.com/michaeltavoni/Thesis_LaTeX_template/archive/refs/heads/main.zip))
+
+## 2. Istruzioni
+
+### 2.1 Opzioni
 
 | Opzioni                  | Descrizione                                                      | Esempio                               |
 |--------------------------|------------------------------------------------------------------|---------------------------------------|
@@ -12,7 +18,7 @@ Il template tesi è stato creato da me, come studente, non è un template uffici
 | [twoside, openany]      | Layout tesi per stampa fronte-retro                          | \documentclass[twoside, openany]{TESI}|
 | [twoside, openright]    | Layout tesi per stampa fronte-retro (nuovi capitoli solo su pagina dispari)          | \documentclass[twoside, openright]{TESI}|
 
-### 1.2 Comandi
+### 2.2 Comandi
 
 | Comando                  | Descrizione                                                     | Esempio                               |
 |--------------------------|-----------------------------------------------------------------|---------------------------------------|
@@ -25,7 +31,7 @@ Il template tesi è stato creato da me, come studente, non è un template uffici
 | \AnnoAccademico{ }      | Inserisce all'interno della copertina l'anno accademico di riferimento specificato all'interno delle parentesi graffe {}   | \AnnoAccademico{2023/2024}            |
 | \dedica{ }              | Inserisce nella seconda pagina della tesi la dedica contenuta all'interno delle parentesi graffe {}. La dedica apparirà come quella dei libri e quindi al centro a destra della pagina, scritta in corsivo.            | \dedica{Ai miei cari famigliari}     |
 
-## 2. Consigli
+## 3. Consigli
 
 Qualora non si voglia scaricare la cartella compressa già pronta, link nella sezione successiva, consiglio di strutturare la cartella del tesi nel seguente modo:
 
@@ -40,9 +46,3 @@ Elaborato_finale:
    ...
 
 ```
-
-## 3. Download
-
-Di seguito è stato inserito il link con il quale si potrà scaricare una cartella compressa, costruita come suggerito in precedenza.
-
-[![Download](https://img.shields.io/badge/Download-Click%20Here-blue.svg)]([url_del_download](https://github.com/michaeltavoni/Thesis_LaTeX_template/archive/refs/heads/main.zip))
