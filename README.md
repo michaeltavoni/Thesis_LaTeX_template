@@ -6,7 +6,7 @@ Il template tesi è stato creato da me, come studente, non è un template uffici
 
 Di seguito è stato inserito il link con il quale si potrà scaricare una cartella compressa, costruita come suggerito in precedenza.
 
-[![Download](https://img.shields.io/badge/Download-Click%20Here-blue.svg)]([url_del_download](https://github.com/michaeltavoni/Thesis_LaTeX_template/archive/refs/heads/main.zip))
+[![Download](https://img.shields.io/badge/Download-Click%20Here-blue.svg)](https://github.com/michaeltavoni/Thesis_LaTeX_template/archive/refs/heads/main.zip)
 
 ## 2. Istruzioni
 
