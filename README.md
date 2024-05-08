@@ -26,7 +26,7 @@ Thesis_LaTeX_template:
 Dove:
 
 - **capitoli**\
-artella nella quale poter organizzare i capitoli della tesi (conterrà un file `.tex` vuoto da eliminare).
+cartella nella quale poter organizzare i capitoli della tesi (conterrà un file `.tex` vuoto da eliminare).
 - **help**\
 cartella contenente i facsimili dei risultati ottenibili con il template e le istruzioni ai comandi.
 - **immagini**\
