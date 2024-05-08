@@ -6,7 +6,7 @@ _Thesis\_LaTeX\_template_, si presenta come un template **non ufficiale** del di
 
 [![Download](https://img.shields.io/badge/Download-Click%20Here-blue.svg)](https://github.com/michaeltavoni/Thesis_LaTeX_template/archive/refs/heads/main.zip)
 
-Premendo il seguente bottone per il download, scaricherete sul vostro dispositivo un file compresso contenente l'intero ambiente di lavoro, ovvero, una cartella strutturata come segue:
+Premendo il bottone per il download, scaricherete sul vostro dispositivo un file compresso contenente l'intero ambiente di lavoro, ovvero, una cartella strutturata come segue:
 
 ```raw
 Thesis_LaTeX_template:
@@ -25,17 +25,17 @@ Thesis_LaTeX_template:
 
 Dove:
 
-- capitoli\
-artella nella quale poter organizzare i capitoli della tesi.
-- help\
+- **capitoli**\
+artella nella quale poter organizzare i capitoli della tesi (conterrà un file `.tex` vuoto da eliminare).
+- **help**\
 cartella contenente i facsimili dei risultati ottenibili con il template e le istruzioni ai comandi.
-- immagini\
-cartella nella quale poter organizzare: immagini, grafici ed altro.
-- nome_cognome_matricola.tex\
+- **immagini**\
+cartella nella quale poter organizzare: immagini, grafici ed altro (conterrà un file `.txt` vuoto, da eliminare).
+- **nome_cognome_matricola**.tex\
 file `.tex` della tesi (file centrale).
-- TESI.cls\
+- **TESI.cls**\
 template della tesi
-- README.md\
+- **README.md**\
 file di spiegazione del template, visualizzabile anche da GitHub.
 
 ## 2. Istruzioni
@@ -63,5 +63,6 @@ file di spiegazione del template, visualizzabile anche da GitHub.
 
 ## 3. Consigli
 
-1. gestire i capitoli della tesi in flie `.tex` dedicati, così da non appesantire e rendere complessa la lettura del file "centrale" ovvero: `nome_cognome_matricola.tex`.
+1. gestire i capitoli della tesi in file `.tex` dedicati, così da non appesantire e rendere complessa la lettura del file "centrale" ovvero: `nome_cognome_matricola.tex`.
 1. se si ha del codice (python, r o altro), consiglio di creare un'apposita cartella.
+1. non mi sono ancora posto il problema della bilbiografia....
