@@ -1,6 +1,6 @@
 # Template Tesi
 
-_Thesis\_LaTeX\_template_, si presenta come un template **non ufficiale** del dipartimento di economia "Marco Biagi" dell'università degli studi di Modena e Reggio-Emilia, con il quale poter redigere la propria tesi (sia triennale che magistrale) sfruttando il linguaggio di typesetting $\latex$.
+_Thesis\_LaTeX\_template_, si presenta come un template **non ufficiale** del dipartimento di economia "Marco Biagi" dell'università degli studi di Modena e Reggio-Emilia, con il quale poter redigere la propria tesi (sia triennale che magistrale) sfruttando il linguaggio di typesetting $\LaTeX$.
 
 ## 1. Download
 
@@ -10,18 +10,33 @@ Premendo il seguente bottone per il download, scaricherete sul vostro dispositiv
 
 ```raw
 Thesis_LaTeX_template:
-    capitoli: #cartella che conterrà i vostri capitoli .tex
+    capitoli: 
         ...
-    help: #cartella contenente i facsimile tesi che si potranno ottenere dal template e l'help dei comandi
+    help: 
         facsimile_tesi_oneside.pdf
         ...
         help_comandi.png
-    immagini: #cartella che conterrà le immagini da inserire nella tesi
+    immagini:
         ...
-    nome_cognome_matricola.tex #il file della tesi "generale"
-    TESI.cls #template della tesi
-    README.md #file non utile per fini di stesura (eliminabile)
+    nome_cognome_matricola.tex 
+    TESI.cls 
+    README.md 
 ```
+
+Dove:
+
+- capitoli\
+artella nella quale poter organizzare i capitoli della tesi.
+- help\
+cartella contenente i facsimili dei risultati ottenibili con il template e le istruzioni ai comandi.
+- immagini\
+cartella nella quale poter organizzare: immagini, grafici ed altro.
+- nome_cognome_matricola.tex\
+file `.tex` della tesi (file centrale).
+- TESI.cls\
+template della tesi
+- README.md\
+file di spiegazione del template, visualizzabile anche da GitHub.
 
 ## 2. Istruzioni
 
@@ -48,4 +63,5 @@ Thesis_LaTeX_template:
 
 ## 3. Consigli
 
-Qualora non si voglia scaricare la cartella compressa già pronta, link nella sezione successiva, consiglio di strutturare la cartella del tesi nel seguente modo:
+1. gestire i capitoli della tesi in flie `.tex` dedicati, così da non appesantire e rendere complessa la lettura del file "centrale" ovvero: `nome_cognome_matricola.tex`.
+1. se si ha del codice (python, r o altro), consiglio di creare un'apposita cartella.
