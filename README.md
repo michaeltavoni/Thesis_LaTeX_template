@@ -1,12 +1,27 @@
 # Template Tesi
 
-Il template tesi è stato creato da me, come studente, non è un template ufficiale. Ad ogni modo al netto delle modifiche del caso. si tratta di un template specifico per il Dipartimento di Economia "Marco Biagi" dell'università di Modena e Reggio-Emilia.
+_Thesis\_LaTeX\_template_, si presenta come un template **non ufficiale** del dipartimento di economia "Marco Biagi" dell'università degli studi di Modena e Reggio-Emilia, con il quale poter redigere la propria tesi (sia triennale che magistrale) sfruttando il linguaggio di typesetting $\latex$.
 
 ## 1. Download
 
-Di seguito è stato inserito il link con il quale si potrà scaricare una cartella compressa, costruita come suggerito in precedenza.
-
 [![Download](https://img.shields.io/badge/Download-Click%20Here-blue.svg)](https://github.com/michaeltavoni/Thesis_LaTeX_template/archive/refs/heads/main.zip)
+
+Premendo il seguente bottone per il download, scaricherete sul vostro dispositivo un file compresso contenente l'intero ambiente di lavoro, ovvero, una cartella strutturata come segue:
+
+```raw
+Thesis_LaTeX_template:
+    capitoli: #cartella che conterrà i vostri capitoli .tex
+        ...
+    help: #cartella contenente i facsimile tesi che si potranno ottenere dal template e l'help dei comandi
+        facsimile_tesi_oneside.pdf
+        ...
+        help_comandi.png
+    immagini: #cartella che conterrà le immagini da inserire nella tesi
+        ...
+    nome_cognome_matricola.tex #il file della tesi "generale"
+    TESI.cls #template della tesi
+    README.md #file non utile per fini di stesura (eliminabile)
+```
 
 ## 2. Istruzioni
 
@@ -34,15 +49,3 @@ Di seguito è stato inserito il link con il quale si potrà scaricare una cartel
 ## 3. Consigli
 
 Qualora non si voglia scaricare la cartella compressa già pronta, link nella sezione successiva, consiglio di strutturare la cartella del tesi nel seguente modo:
-
-```
-Elaborato_finale:
-   Immagini:
-     ...
-   Capitoli:
-     ...
-   nome_cognome_matricola.tex
-   TESI.cls
-   ...
-
-```
