@@ -6,7 +6,7 @@
 
 %% IDENTIFICAZIONE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{TESI}[2024/04/13 Documentclass TESI di Michael Tavoni]
+\ProvidesClass{TESI}[2024/06/16 Documentclass TESI di Michael Tavoni]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% IMPORTAZIONE DI PACCHETTI E CLASSE DOCUMENTO %%%%%%%%%%%%%%%%%%%
@@ -21,6 +21,7 @@
 \RequirePackage{setspace}
 \RequirePackage{fancyhdr}
 \RequirePackage{hyperref}
+\RequirePackage{float}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% CAMPI x COPERTINA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -76,8 +77,10 @@
         pdfauthor={\@Laureando},
         pdftitle={\@Titolo},
         pdfkeywords={\@ParoleChiave},
-        pdfsubject=Tesi di {\@Laureando} in {\@Titolo},
-        pdfcreator={\@Laureando} con template MT
+        pdfsubject={Tesi di Laurea di \@Laureando},
+        pdfcreator={\@Laureando},
+        pdfproducer={MT template},
+        pdfnewwindow=true
     }
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -122,29 +125,91 @@
         \vfill
         
         \large
-        \begin{minipage}[t]{0.45\textwidth}
-            \begin{flushleft}
-                \textsc{relatore:}
-
-                \@Relatore
-                \ifdefempty{\@Correlatore}{}{
-
-                    \vspace{8pt}
-
-                    \textsc{correlatore:}
-
+        % terza versione
+        \ifdef{\@Correlatore}{
+            \begin{minipage}[t]{0.45\textwidth}
+                \begin{tabular}[t]{l}
+                    \textsc{relatore}\\
+                    \@Relatore\vspace{12pt}\\
+                    \textsc{correlatore}\\
                     \@Correlatore
-                }
-            \end{flushleft} 
-        \end{minipage}
-        \begin{minipage}[t]{0.45\textwidth}
-            \begin{flushright}
-                \begin{tabular}{l}
-                    \textsc{laureando:}\\
-                    \@Laureando
                 \end{tabular}
-            \end{flushright}
-        \end{minipage}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{0.45\textwidth}
+                \begin{flushright}
+                    \begin{tabular}[t]{l}
+                        \textsc{candidato}\\
+                        \@Laureando
+                    \end{tabular}  
+                \end{flushright}
+            \end{minipage}
+        }{
+            \begin{minipage}[t]{0.45\textwidth}
+                \begin{tabular}[t]{l}
+                    \textsc{relatore}\\
+                    \@Relatore
+                \end{tabular}
+            \end{minipage}
+            \hfill
+            \begin{minipage}[t]{0.45\textwidth}
+                \begin{flushright}
+                    \begin{tabular}[t]{l}
+                        \textsc{candidato}\\
+                        \@Laureando
+                    \end{tabular}  
+                \end{flushright}
+            \end{minipage}
+        }
+
+        % seconda versione
+        % \ifdef{\@Correlatore}{
+        %     \begin{minipage}[t]{0.45\textwidth}
+        %             \textsc{relatore}\\
+        %             \@Relatore\vspace{12pt}
+    
+        %             \textsc{correlatore}\\
+        %             \@Correlatore
+        %     \end{minipage}
+        % }{
+        %     \begin{minipage}[t]{0.45\textwidth}
+        %             \textsc{relatore}\\
+        %             \@Relatore
+        %     \end{minipage}
+        % }
+        % \hfill
+        % \begin{minipage}[t]{0.45\textwidth}
+        %     \begin{flushright}
+        %         \textsc{candidato}\\
+        %         \@Laureando
+        %     \end{flushright}
+        % \end{minipage}
+
+        % prima versione
+        % \begin{minipage}[ht!]{0.45\textwidth}
+        %     \begin{flushleft}
+        %         \textsc{relatore:}
+
+        %         \@Relatore
+        %         \ifundef{\@Correlatore}{}{
+        %         %\ifdefempty{\@Correlatore}{}{
+
+        %             \vspace{12pt}
+
+        %             \textsc{correlatore:}
+
+        %             \@Correlatore
+        %         }
+        %     \end{flushleft} 
+        % \end{minipage}
+        % \begin{minipage}[ht!]{0.45\textwidth}
+        %     \begin{flushright}
+        %         \begin{tabular}{l}
+        %             \textsc{candidato:}\\
+        %             \@Laureando
+        %         \end{tabular}
+        %     \end{flushright}
+        % \end{minipage}
         
         \vfill
         \rule{\textwidth}{0.4pt}
@@ -197,7 +262,7 @@
 % }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\@ifclasswith{book}{openright}{
+\@ifclasswith{book}{twoside}{
     \newcommand{\dedica}[1]{
         \cleardoublepage
         \thispagestyle{empty}

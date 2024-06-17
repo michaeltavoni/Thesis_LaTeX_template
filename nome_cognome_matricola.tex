@@ -1,4 +1,4 @@
-\documentclass[twoside, openany]{TESI}
+\documentclass[oneside, openany]{TESI}
 
 % PREAMBOLO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{xcolor} %pacchetto per gestire i colori (evidenziatura, testo colorato)
@@ -19,16 +19,16 @@
 \Indirizzo{Nome del corso di laurea}
 \Laureando{Nome studente}
 \Relatore{Nome relatore}
-\Correlatore{Nome correlatore} %se non presente cancellare l'intero comando (non verrà inserito nulla nel documento finale)
+\Correlatore{Nome primo correlatore\\ Nome secondo correlatore} %se non presente cancellare l'intero comando (non verrà inserito nulla nel documento finale)
 \Titolo{Titolo della tesi}
-\ParoleChiave{Chiavi separate da ;}
+\ParoleChiave{parola1, parola2, parola3} %parole chiavi separate dalla virgola
 \AnnoAccademico{2023/2024}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 \maketitle
-%\dedica{dedica come nei libri}
+\dedica{dedica come nei libri}
 \frontmatter
 \chapter{Abstract}
 %inserire testo
@@ -40,6 +40,7 @@
 %inserire testo
 \chapter{Primo capitolo della Tesi}
 \section{Prima sezione del primo capitolo della Tesi}
+\input{capitoli/capitolo_esempio.tex}
 %inserire testo
 \chapter{Secondo capitolo della Tesi}
 \section{Prima sezione del secondo capitolo della Tesi}
@@ -50,6 +51,14 @@
 \chapter{Prima appendice}
 %inserire testo
 \backmatter 
-\chapter{Bibliografia}
+\nocite{*} %per inserire l'intera bibliografia e non solo quella che hai citato all'interno dell'elaborato
+% \chapter{Bibliografia}
+\bibliographystyle{plain}
+\bibliography{ThesisBiblio}
+\addcontentsline{toc}{chapter}{Bibliografia}
+\listoffigures %indice delle immagini
+\addcontentsline{toc}{chapter}{Lista Figure}
+\listoftables %indice delle tabelle
+\addcontentsline{toc}{chapter}{Lista Tabelle}
 \end{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
